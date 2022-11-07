@@ -17,7 +17,7 @@ export const NavBar = () => {
                     <Link to="/">Inicio</Link>
                     <NavLink className={({isActive}) => isActive === true ? "claseActiva" : "claseInactiva"} to="/category/Criptomonedas">Criptomonedas</NavLink>
                     <NavLink className={({isActive}) => isActive === true ? "claseActiva" : "claseInactiva"} to="/category/NFTS">NFTS</NavLink>
-                    <NavLink className={({isActive}) => isActive === true ? "claseActiva" : "claseInactiva"} to="/category/Acciones">Acciones</NavLink>
+
                 </div>
                 <div>
                     <Link to="/cart">
