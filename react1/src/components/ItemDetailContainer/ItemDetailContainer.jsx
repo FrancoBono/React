@@ -13,7 +13,7 @@ export const ItemDetailContainer = () => {
     useEffect(() => {
         const getProducto = async () => {
             // creamos la referencia del documento al que vamos a consultar
-            const queryRef = doc(db, 'items', id);
+            const queryRef = doc(db, 'productos', id);
             // hacemos la consulta
             const response = await getDoc(queryRef);
             const newDoc = {

@@ -7,13 +7,13 @@ import { useParams } from "react-router-dom";
 
 
 export const ItemListContainer = () => {
-    console.log(useParams());
+    //console.log(useParams());
     const { categoryId } = useParams();
     const [productos, setProductos] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const queryRef = categoryId ? query(collection(db, 'items'), where('categoria', '==', categoryId)) : collection(db, 'items');
+        const queryRef = categoryId ? query(collection(db, 'productos'), where('categoria', '==', categoryId)) : collection(db, 'productos');
         getDocs(queryRef).then((response) => {
                 const results = response.docs;
                 const docs = results.map(doc => {

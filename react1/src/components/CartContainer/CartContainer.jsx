@@ -33,7 +33,7 @@ export const CartContainer = () => {
 
     const updateProduct = () => {
         // creamos la referencia del documento que vamos a actualizar
-        const queryRef = doc(db, 'items', 'Fjz3RPSy1EpN40vQYr59');
+        const queryRef = doc(db, 'productos', 'Fjz3RPSy1EpN40vQYr59');
         // actualizamos el documento
         updateDoc(queryRef, { price: 63 }).then(() => console.log('actualizado correctamente')).catch((error) => console.log('hubo un error'));
     }
